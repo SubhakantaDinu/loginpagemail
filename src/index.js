@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
 import App from './App';
+// import Mail from './Mail';
+// import Appbar from './Appbar'
+import { StyledEngineProvider } from '@mui/material/styles';
 import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
-  <React.StrictMode>
+  <StyledEngineProvider injectFirst>
+    {/* <Appbar />
+    <Mail /> */}
     <App />
-  </React.StrictMode>,
+  
+</StyledEngineProvider>,
   document.getElementById('root')
 );
 
